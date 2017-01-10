@@ -52,27 +52,27 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	letter-spacing: 2px;
 }
 #about{
-	padding-top: 60px;
+	padding: 40px;
 }
-.ab-title{
+.se-title{
 	/*padding-top: 40px;*/
 }
-.ab-title>h2,.ab-title>span,.ab-title>h4{
+.se-title>h2,.se-title>span,.se-title>h4{
 	text-align: center;
 	letter-spacing: .1rem;
 }
-.ab-title>h2{
+.se-title>h2{
 	letter-spacing: .5rem;
 	font-size: 18px
 }
-.ab-title>span{
+.se-title>span{
 	display: block;
 	width: 10%;
 	height: 2px;
 	background: #871a04;
 	margin: 0 auto;
 }
-.ab-title>h4{
+.se-title>h4{
 	text-transform: uppercase;
 	font-size: 16px;
 }
@@ -80,10 +80,77 @@ ul,ol,li,a,a:hover,a:focus,a:active,div{
 	padding: 0 20%;
 }
 .ab-content>p{
-
+	text-align: center;
+	color: #424242;
 }
-.ab-content>p>img{
-	border-radius: 50%;
-	width: 400px;
-	height: 400px;
+.ab-content>p:nth-of-type(1){
+	font-size: 18px;
+}
+.wrap-me{
+	width: 300px;
+	height:300px;
+	overflow: hidden;
+	transform: rotate(-45deg);
+	margin: 70px auto;
+}
+.wrap-me>img{
+	width: 300px;
+	height: 300px;
+	transform: rotate(45deg) scale(1.38);
+}
+#skill{
+	position: relative;
+	padding: 40px 0;
+	background: url(/assets/images/skill-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#skill:after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '111';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+}
+.sk-skill{
+	color: #fff;
+}
+.wrap-sk{
+	position: relative;
+	z-index: 4;
+}
+.sk-content{
+	color: #fff;
+	padding: 0 20px;
+	margin-top: 15px;
+}
+.sk-content>ul{
+	display: table;
+	width: 100%;
+}
+.sk-content>ul>li{
+	display: table-cell;
+	width: 25%;
+	text-align: center;
+}
+.sk-co-title>p{
+	font-style: italic;
+	color: #ccc;
+}
+.sk-list{
+	width: 100%;
+}
+.sk-list>li{
+	width: 90%;
+	padding: 15px 0;
+	margin: 15px auto;
+	border:1px solid #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
 }
